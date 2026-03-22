@@ -1,0 +1,95 @@
+﻿Telegram or Discord bots with a simple RAG or image-description system.
+🎯 Goal
+Build a lightweight GenAI bot that can:
+1. Receive user messages via Telegram (or Discord),
+2. Perform one of the following:
+   * Option A (RAG): Retrieve relevant answers from a small knowledge base of documents, or
+   * Option B (Vision): Describe or tag an uploaded image using an open-source vision model,
+3. Reply back to the user with the generated answer or image caption.
+________________
+
+
+🧱 Assignment Details
+🧩 1. Bot Interface
+* Choose Telegram (using python-telegram-bot) or Discord (using discord.py or interactions.py).
+* The bot should respond to commands:
+   * /ask <query> — for text or RAG queries
+   * /image — user uploads an image for description
+   * /help — show usage instructions
+🧩 2. Knowledge or Image System
+Pick one of the two tracks:
+🔹 Option A — Mini-RAG
+* Use 3–5 short Markdown or text documents (e.g., company policies, recipes, tech FAQs).
+* Build a retrieval system:
+   * Split into chunks
+   * Embed using a local model (e.g., snowflake-arctic-embed, all-MiniLM-L6-v2)
+   * Store embeddings in a local SQLite or sqlite-vec DB
+   * At query time:
+      1. Retrieve top-k chunks
+      2. Build a context + prompt
+      3. Call a small LLM (Ollama, Hugging Face model, or OpenAI API if preferred)
+   * Send back summarized answer to user.
+🔹 Option B — Image Description
+* Accept image uploads via Telegram/Discord.
+* Use a local model such as:
+   * llava, blip2, or clip-interrogator from Hugging Face.
+* Generate:
+   * Short caption
+   * 3 keywords or tags
+* Send caption + tags back to the user.
+________________
+
+
+🧩 3. Optional Enhancements
+(Candidates aiming higher can implement these)
+* Message history awareness — maintain last 3 interactions per user.
+* Basic caching (don’t re-embed already seen queries).
+* “Source snippets” — show which doc was used in RAG response.
+* /summarize command — summarize last image or chat.
+________________
+
+
+📦 Deliverables
+1. Source code (Python preferred).
+2. README.md explaining:
+   * How to run locally (python app.py or Docker Compose)
+   * Which models and APIs are used
+   * System design diagram (optional but appreciated)
+3. Demo screenshots or short GIF of working interaction.
+________________
+
+
+🧪 Evaluation Criteria
+Area
+	What We Look For
+	Code Quality
+	Readable, modular, minimal dependencies
+	System Design
+	Logical architecture, clear data flow
+	Model Use
+	Good reasoning for chosen model (local vs API)
+	Efficiency
+	Sensible caching, small model footprint
+	User Experience
+	Clear responses, fast turnaround
+	Innovation
+	Bonus: multi-modal support or clever prompt design
+	________________
+
+
+⚡ Variants for You to Use
+Variant
+	Description
+	🧠 Mini-RAG Telegram Bot
+	Answers questions from stored text docs
+	🖼️ Vision Captioning Bot
+	Describes uploaded images
+	🧩 Hybrid Bot
+	Supports both text and image modes
+	
+
+🚀 Tech Stack Recommendations
+* Bot: python-telegram-bot or discord.py
+* Embeddings: sentence-transformers or sqlite-vec
+* LLM: ollama (LLaMA 3, Mistral, Phi-3) or OpenAI API
+* Optional: FastHTML or Gradio for local UI/debugging
