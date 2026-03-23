@@ -101,13 +101,23 @@ These are the recorded examples saved in `Results/`:
 
 ### Visual preview
 
-![Ask Query Answer](Results/1000232264.jpg)
+<p align="center">
+  <img src="Results/1000232264.jpg" alt="Ask Query Answer" width="480" />
+</p>
 
-![Help Command](Results/1000232265.jpg)
+<p align="center">
+  <img src="Results/1000232265.jpg" alt="Help Command" width="480" />
+</p>
 
-![Image Command](Results/1000232266.jpg)
+<p align="center">
+  <img src="Results/1000232266.jpg" alt="Image Command" width="480" />
+</p>
 
-![Summarize Command](Results/1000232267.jpg)
+<p align="center">
+  <img src="Results/1000232267.jpg" alt="Summarize Command" width="480" />
+</p>
 
-![Bot Profile](Results/1000232268.jpg)
+<p align="center">
+  <img src="Results/1000232268.jpg" alt="Bot Profile" width="480" />
+</p>
 
