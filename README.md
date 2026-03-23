@@ -80,26 +80,7 @@ flowchart LR
 - `/image` command returns a clear message that image mode is not enabled.
 - To use your own docs, replace files in `knowledge_base/` and restart bot.
 
-## Demo Checklist (for submission)
-
-Capture screenshots/GIF showing:
-1. `/help` output
-2. `/ask` query and answer with sources
-3. `/summarize` output
-4. `/image` command response (Option A notice)
-
 ## Demo Screenshots
-
-These are the recorded examples saved in `Results/`:
-
-- `Results/1000232264.jpg` - `/ask` and response + sources
-- `Results/1000232265.jpg` - `/help` response
-- `Results/1000232266.jpg` - `/image` response (Option A notice)
-- `Results/1000232267.jpg` - `/summarize` response
-- `Results/1000232268.jpg` - Bot profile view
-
-
-### Visual preview
 
 <p align="center">
   <img src="Results/1000232264.jpg" alt="Ask Query Answer" width="480" />
