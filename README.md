@@ -88,3 +88,26 @@ Capture screenshots/GIF showing:
 3. `/summarize` output
 4. `/image` command response (Option A notice)
 
+## Demo Screenshots
+
+These are the recorded examples saved in `Results/`:
+
+- `Results/1000232264.jpg` - `/ask` and response + sources
+- `Results/1000232265.jpg` - `/help` response
+- `Results/1000232266.jpg` - `/image` response (Option A notice)
+- `Results/1000232267.jpg` - `/summarize` response
+- `Results/1000232268.jpg` - Bot profile view
+
+
+### Visual preview
+
+![Ask Query Answer](Results/1000232264.jpg)
+
+![Help Command](Results/1000232265.jpg)
+
+![Image Command](Results/1000232266.jpg)
+
+![Summarize Command](Results/1000232267.jpg)
+
+![Bot Profile](Results/1000232268.jpg)
+
